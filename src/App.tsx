@@ -1,9 +1,9 @@
-import { Header } from "./components/Header/Header"
-import { Sidebar } from "./components/Sidebar/Sidebar"
-import { Post } from "./components/Post/Post"
+import { Header } from "./components/Header/Header";
+import { Sidebar } from "./components/Sidebar/Sidebar";
+import { Post } from "./components/Post/Post";
 
-import * as S from "./App.module.css"
-import "./global.css"
+import * as S from "./App.module.css";
+import "./global.css";
 
 const posts = [
   {id: 1,
