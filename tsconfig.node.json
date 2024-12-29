@@ -19,12 +19,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-    "css": {
-      "modules": {
-          "localsConvention": "camelCase", // Garante que as classes CSS podem ser acessadas como camelCase
-      },
-  }
-  
   },
   "include": ["vite.config.ts"]
 }
