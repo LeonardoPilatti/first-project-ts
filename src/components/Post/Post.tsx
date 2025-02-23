@@ -10,20 +10,27 @@ interface Author {
     name: string;
     role: string;
     avatarUrl: string;
-}
-
-interface Content {
+  }
+  
+  interface Content {
     type: "paragraph" | "link";
     content: string;
-}
-
-interface PostProps {
+  }
+  
+  export interface PostType {
     author: Author;
     publishedAt: Date;
     content: Content[];
-}
+    id: number;
+  }
+  
+  interface PostProps {
+    post: PostType;
+  }
 
-export const Post = ({author, publishedAt, content}: PostProps) => {
+export const Post = ({post}: PostProps) => {
+    const {author, publishedAt, content} = post;
+
     const [comments, setComments] = useState([
         'Post muito bacana, hein?!'
     ])
